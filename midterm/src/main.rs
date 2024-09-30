@@ -9,7 +9,7 @@ and you may not use the same element twice.
 
 You can return the answer in any order. */
 
-pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
+fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
     let mut map = HashMap::new(); //make a hash map
 
     //fill the hash map
@@ -31,9 +31,15 @@ pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
     vec![] //return empty if no solution
 }
 
+fn hello_world_func() {
+    println!("Hello World!");
+}
+
 fn main() {
     let nums = vec![2,7,11,15];
     two_sum(nums, 9);
+
+    hello_world_func();
 }
 
 
